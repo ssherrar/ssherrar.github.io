@@ -1,0 +1,121 @@
+#nav-list{
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    padding-right: 2%;
+}
+
+.form-row{
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+}
+
+table{
+    position:absolute;
+    left: 25%;
+    top: 25%;
+    border-collapse: separate;
+    border-spacing: 0px 15px;
+}
+
+
+td{
+    min-width: 460px;
+    /* border: 1px solid red; */
+
+
+}
+
+::placeholder{
+    color: rgba(255, 255, 255, 0.459);
+    text-shadow: none;
+}
+
+#input{
+    height: 50px;
+    width: 474px;
+    font-size: 2rem;
+    background-color:black;
+    color: white;
+    text-shadow: 1px 1px 10px black;
+}
+
+#input-two{
+    height: 50px;
+    width: 960px;
+    font-size: 2rem;
+    background-color:black;
+    color: white;
+    text-shadow: 1px 1px 10px black;
+}
+
+textarea{
+    height: 500px;
+    width: 962px;
+    font-size: 2rem;
+    background-color:black;
+    color: white;
+    text-shadow: 1px 1px 10px black;
+}
+
+.contact-form-button{
+
+    width: 200px;
+    height: 55px;
+    border-radius: 5px;
+    background-color: #ff7f50;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+    padding-top: 5px;
+    margin-top: 20px;
+    color: white;
+}
+
+.contact-form-button:hover {
+    background-color: #ef744b;
+}
+
+.contact-form-button:active {
+    background-color: #A9A9A9;
+    color: #808080'
+}
+
+
+@media only screen and (max-width: 1400px) {
+    table{
+        position:absolute;
+        left: 8%;
+
+    }
+
+    td{
+        min-width: 300px;
+
+    }
+    #input-two{
+        height: 50px;
+        width: 960px;
+        font-size: 2rem;
+    }
+    textarea{
+        height: 500px;
+        width: 962px;
+        font-size: 2rem;
+    }
+}
+
+
+@media only screen and (max-width: 1000px) {
+    table{
+        position:absolute;
+        left: 0.5%;
+        top: 25%;
+    }
+
+    td{
+        min-width: 300px;
+    }
+    
+}

@@ -1,0 +1,72 @@
+#projects-html-nav{
+    position: fixed;
+    top: 0px;
+
+}
+
+.projects-section-project-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.806);
+}
+
+.project-folder {
+    display: flex;
+    flex-direction: row;
+}
+
+.active-folder {
+    background-color: rgba(0, 0, 0, 0.806);
+    top: 40px;
+    width: 50vw;
+    height: 150px;
+    height: 200px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    
+}
+#active-folder-text{
+    font-size: 60px;
+    position:relative;
+    top: 50px;
+
+}
+
+.inactive-folder{
+    background-color: #182224;
+    top: 40px;
+    width: 50vw;
+    height: 150px;
+
+}
+
+#inactive-folder-text{
+    font-size: 60px;
+    position:relative;
+    top: 45px;
+}
+
+/* -------Project Cards------- */
+
+.project-cards-container-project-page{
+    padding: 100px;
+    width: 95vw;
+    max-width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+.project-card-project-page {
+    width: 25vw;
+    min-width: 300px;
+    height: 850px;
+    box-shadow: 5px 5px 20px gray;
+    margin: 10px;
+    /* margin-left: 200px; */
+    background-color: black;
+}
