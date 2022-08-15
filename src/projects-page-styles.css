@@ -1,7 +1,6 @@
 #projects-html-nav{
     position: fixed;
     top: 0px;
-
 }
 
 .projects-section-project-page {
@@ -9,12 +8,15 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    margin: 0px;
+    padding: 0px;
     background-color: rgba(0, 0, 0, 0.806);
 }
 
 .project-folder {
     display: flex;
     flex-direction: row;
+    height: 184px;
 }
 
 .active-folder {
@@ -22,14 +24,13 @@
     top: 40px;
     width: 50vw;
     height: 150px;
-    height: 200px;
-    border: 1px solid rgba(0, 0, 0, 0);
-    
 }
+
 #active-folder-text{
     font-size: 60px;
     position:relative;
     top: 50px;
+    color: white;
 
 }
 
@@ -45,6 +46,7 @@
     font-size: 60px;
     position:relative;
     top: 45px;
+    color: white;
 }
 
 /* -------Project Cards------- */
@@ -64,9 +66,8 @@
 .project-card-project-page {
     width: 25vw;
     min-width: 300px;
-    height: 850px;
+    height: 400px;
     box-shadow: 5px 5px 20px gray;
     margin: 10px;
-    /* margin-left: 200px; */
     background-color: black;
 }

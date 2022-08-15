@@ -26,17 +26,17 @@ nav {
     flex-direction: 'row';
     justify-content: space-between;
     position: fixed;
-    /* left: 40px; */
-    background-color: #3b5358f5;
+    background-color: #3b5358ef;
     width: 100vw;
     height: 70px;
     z-index: 1;
     align-items: center;
-    box-shadow: 1px 1px 5px black;
-    /* border-bottom-left-radius: 100px 1000px;
-    border-bottom-right-radius: 100px 1000px; */
-    
 }
+
+/* nav.show {
+    background-color: red;
+} */
+
 
 
 
@@ -47,10 +47,17 @@ nav {
 }
 
 #nav-list{
-    width: 600px;
+    width: 700px;
     display: flex;
     flex-direction: row;
     padding-right: 2%;
+}
+
+#nav-list.show{
+    display: block;
+    background-color: #3b5358ef;
+    width: 100vw;
+
 }
 
 #nav-list-bottom{
@@ -67,6 +74,8 @@ ul {
     justify-content: space-around;
     font-size: 30px;
 }
+
+
 
 li {
     text-decoration: none;
@@ -104,9 +113,10 @@ P {
 .hero-container {
     display: flex;
     flex-direction: row;
-    height: 100%;
+    height: 100vh;
     justify-content: space-between;
     align-items: center;
+    top: -100px;
 }
 
 .hero-text {
@@ -218,16 +228,6 @@ hr {
 }
 
 
-.hamburger-nav {
-    text-decoration: none;
-    color: white;
-}
-
-.hamburger-nav:hover {
-    text-decoration: none;
-    color: rgb(179, 255, 0);
-}
-
 a {
     text-decoration: none;
 }
@@ -243,13 +243,7 @@ a {
 
 
 
-.hamburger {
-    display: none;
-}
 
-.hamburger:focus {
-    outline: 0;
-}
 
 #testimonial-section-header, #section-header:active {
     color: white;
@@ -315,6 +309,27 @@ a {
     top: -50px;
 }
 
+.hamburger-nav {
+    text-decoration: none;
+    color: white;
+}
+
+.hamburger-nav:hover {
+    text-decoration: none;
+    color: rgb(179, 255, 0);
+}
+
+
+.hamburger {
+    display: none;
+}
+
+.hamburger:focus {
+    outline: 0;
+}
+
+
+
 @media only screen and (max-width: 1000px) {
 
     .project-cards-container {
@@ -325,30 +340,46 @@ a {
     .hamburger {
         display: block;
         border: 0;
-        background-color: transparent;
+        background-color: #3b535866;
+        padding-top: 61px;
+        padding-bottom: 61px;
+        padding-left: 10px;
+        padding-right: 10px;
+        position: fixed;
+        top: -20px;
+        right: -20px;
         color: white;
         font-size: 30px;
         margin: 20px;
         align-self: flex-end;
-    }
 
-    ul {
-        display: none;
-        background-color: #3b5358;
-        margin: 0px;
     }
 
     ul.show {
         display: block;
     }
 
-    nav {
-        display: flex;
-        flex-direction: column-reverse;
-        background-color: #3b5358;
+    #nav-list {
+        display: none;
+        position: fixed;
+        top: -30px;
+        font-size: 1.5rem;
+        padding-left: 25px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
+
+    nav{
+        background-color: #3b535800;
+        height: 100px;
+        width: 110vw;
+    } 
     
     .logo {
+        display: none;
+    }
+
+    #nav-list-bottom{
         display: none;
     }
 }
@@ -357,6 +388,26 @@ a {
 
 
 
+
+
+/* ------About Me Style----- */
+
+.about-me-nav{
+    position: relative;
+}
+.about-me-header{
+    position: relative;
+    top: 30px;
+    padding-left: 100px;
+    display: flex;
+}
+.about-me-video{
+    position: relative;
+    top: 30px;
+    padding-left: 100px;
+    display: flex;
+    justify-content: left;
+}
 
 
 

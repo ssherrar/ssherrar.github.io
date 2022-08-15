@@ -2,6 +2,7 @@
 <html>
   <head>
     <link rel="stylesheet" href="../styles.css"/>
+    <link rel="stylesheet" href="../projects-page-styles.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
@@ -11,21 +12,80 @@
     <meta charset="UTF-8"/>
   </head>
   <body>
-        <section class="hero">
-            <nav>
-                <a href="../../index.html"><image class="logo" src="../images/flame2.png" alt="Sam Sherrard's logo"/></a>
-                <ul id="nav-list">
-                    <li><a class= "hamburger-nav" href="../../index.html">Home</a></li> |
-                    <li><a class= "hamburger-nav" href="about.html">About me</a></li> |
-                    <li><a class= "hamburger-nav" href="projects-HTML.html">Projects</a></li> |
+    <section class="hero">
+        <nav id="projects-html-nav">
+            <a href="../../index.html"><image class="logo" src="../images/flame2.png" alt="Sam Sherrard's logo"/></a>
+            <ul id="nav-list">
+                    <li><a class= "hamburger-nav" href="../../index.html">Home</a></li>
+                    <li><a class= "hamburger-nav" href="about.html">About me</a></li>
+                    <li><a class= "hamburger-nav" href="projects-HTML.html">Projects</a></li>
                     <li><a class= "hamburger-nav" href="contact.html">Contact me</a></li>
                 </ul>
                 <button class="hamburger" id="hamburger">
                     <i class="fas fa-bars"></i>
                 </button>
             </nav>
-        </section>
 
+            <div class="project-folder">
+                <a href="projects-HTML.html"><div class="inactive-folder">
+                    <h1 id="inactive-folder-text">Projects.html</h1>
+                </div></a>
+                <a href="projects-react.html"><div class="active-folder">
+                    <h1 id="active-folder-text">Projects.react-native</h1>
+                </div></a>
+                
+            </div>
+
+            <section class="projects-section-project-page">
+                <!-- <div  class="project-header">
+                  <a id="section-header" href="projects-HTML.html"><h2>Projects</h2></a>
+                </div> -->
+                <div class="project-cards-container-project-page">
+                    <div class="project-card-project-page">
+                        <img class ="project-image" src="src/images/battingAverage2.png" alt="Project One Image"/>
+                        <h3>Project One</h3>
+                        <p class="subtext">This is my project and some text about it.  I enjoyed making this project.</p>
+                        <hr/>
+                        <p clas="subtext"><a class="project-link" href="https://snack.expo.dev/@ssherrar/lu8_battingaveragemockup_validation" target="blank" >View here</a></p>
+                    </div>
+                    <div class="project-card-project-page">
+                        <img class ="project-image" src="src/images/shoppingCart.png" alt="Project Two  Image"/>
+                        <h3>Project Two</h3>
+                        <p class="subtext">This is my project and some text about it.  I enjoyed making this project.</p>
+                        <hr/>
+                        <p clas="subtext"><a class="project-link" href="https://snack.expo.dev/@ssherrar/unit9_shoppingcart_addremovelistitems" target="blank">View here</a></p>
+                    </div>
+                    <div class="project-card-project-page">
+                        <img class ="project-image" src="src/images/ToDoList.png" alt="Project Three Image"/>
+                        <h3>Project Three</h3>
+                        <p class="subtext">This is my project and some text about it.  I enjoyed making this project.</p>
+                        <hr/>
+                        <p clas="subtext"><a class="project-link" href="https://snack.expo.dev/@ssherrar/unit-9-todo-mockup_functionality_samsherrard" target="blank">View here</a></p>
+                    </div>
+                    <div class="project-card-project-page">
+                        <img class ="project-image" src="" alt="Project Four Image"/>
+                        <h3>Project Four</h3>
+                        <p class="subtext">This is my project and some text about it.  I enjoyed making this project.</p>
+                        <hr/>
+                        <p clas="subtext"><a class="project-link" href="https://github.com/ssherrar" target="blank">View here</a></p>
+                    </div>
+                    <div class="project-card-project-page">
+                        <img class ="project-image" src="" alt="Project Four Image"/>
+                        <h3>Project Four</h3>
+                        <p class="subtext">This is my project and some text about it.  I enjoyed making this project.</p>
+                        <hr/>
+                        <p clas="subtext"><a class="project-link" href="https://github.com/ssherrar" target="blank">View here</a></p>
+                    </div>
+                    <div class="project-card-project-page">
+                        <img class ="project-image" src="" alt="Project Four Image"/>
+                        <h3>Project Four</h3>
+                        <p class="subtext">This is my project and some text about it.  I enjoyed making this project.</p>
+                        <hr/>
+                        <p clas="subtext"><a class="project-link" href="https://github.com/ssherrar" target="blank">View here</a></p>
+                    </div>
+          </section>
+        
+        </section>
 
 
 

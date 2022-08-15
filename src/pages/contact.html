@@ -16,19 +16,19 @@
             <nav>
                 <a href="../../index.html"><image class="logo" src="../images/flame2.png" alt="Sam Sherrard's logo"/></a>
                 <ul id="nav-list">
-                    <li><a class= "hamburger-nav" href="../../index.html">Home</a></li> |
-                    <li><a class= "hamburger-nav" href="about.html">About me</a></li> |
-                    <li><a class= "hamburger-nav" href="projects-HTML.html">Projects</a></li> |
+                    <li><a class= "hamburger-nav" href="../../index.html">Home</a></li>
+                    <li><a class= "hamburger-nav" href="about.html">About me</a></li>
+                    <li><a class= "hamburger-nav" href="projects-HTML.html">Projects</a></li>
                     <li><a class= "hamburger-nav" href="contact.html">Contact me</a></li>
                 </ul>
                 <button class="hamburger" id="hamburger">
                     <i class="fas fa-bars"></i>
                 </button>
             </nav>
-            <form>
+            <form id="contact-me" name="contact-me" method="post" action="https://www.w3schools.com/action_page.php">
                 <table>
                         <tr>
-                            <td>
+                            <td style="font-size: 4rem; font-weight: bold;">
                             Contact Me
                             </td>
                         </tr>
@@ -42,7 +42,7 @@
                         </tr>
                         <tr>
                             <td colspan="2">
-                                <input type="text" id="input-two" name="fname" placeholder="Email">
+                                <input type="email" id="input-two" name="fname" placeholder="Email">
                             <td>
                         </tr>
                         <tr>
@@ -60,7 +60,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <button class="contact-form-button" type="button" onclick="alert('Submission successful!')">Submit</button>
+                                <button class="contact-form-button" type="submit" value="Submit" onclick="alert('Submission successful!')">Submit</button>
                             </td>
 
                         </tr>
