@@ -33,12 +33,6 @@ nav {
     align-items: center;
 }
 
-/* nav.show {
-    background-color: red;
-} */
-
-
-
 
 .logo {
     height: 50px;
@@ -122,6 +116,8 @@ P {
 .hero-text {
     margin-left: 80px;
     margin-bottom: 200px;
+    position: relative;
+    top: 100px;
 }
 
 .button {
@@ -136,34 +132,35 @@ P {
     margin-top: 20px;
     position: relative;
     top: -50px;
+    color: white;
 }
 
 .button:hover {
     background-color: #ef744b;
-}
-
-.button:active {
-    background-color: #A9A9A9;
-    color: #808080'
-}
-
-.button-text {
-    color: white;
-}
-
-.button-text:hover {
     color: rgb(179, 255, 0);
 }
 
+.button:active {
+    background-color: #3b5358ef;
+    color: #808080'
+}
+
+
 .socials {
     padding-bottom: 200px;
+    position: relative;
+    top: 100px;
+    margin-right: 20px;
+    margin-top: 0px;
+}
+
+.social-icon{
+    height: 50px;
+    width: 50px;
 }
 
 
 
-.social {
-    margin: 20px;
-}
 
 .about-me-section {
     display: flex;
@@ -243,7 +240,7 @@ a {
 
 
 
-
+/* -----Testimonial Section----- */
 
 #testimonial-section-header, #section-header:active {
     color: white;
@@ -257,9 +254,8 @@ a {
 .testimonial-hero{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    gap: 20%;
     align-items: center;
+    gap: 20%;
     background-color: #182224;
     height: 1000px;
 }
@@ -267,9 +263,9 @@ a {
 .testimonial-header{
     display: flex;
     justify-content: center;
-    background-color: #182224;
+    background-color: black;
     color: white;
-    padding-top: 200px;
+    margin-top: 0px;
     margin-bottom: 0px;
 }
 
@@ -280,14 +276,15 @@ a {
 
 
 .testimonial-container{
-    width: 25%;
+    width: 300px;
     height: 35%;
-    background-color: black;
+    background-color: #182224;
     margin-top: 40px;
     position: relative;
     border-radius: 2px;
     top: -10%;
     left: 15%;
+    border: 2px solid black;
     box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.409);
 }
 
@@ -329,6 +326,10 @@ a {
 }
 
 
+#socials-non-index{
+    display: none;
+}
+
 
 @media only screen and (max-width: 1000px) {
 
@@ -341,18 +342,17 @@ a {
         display: block;
         border: 0;
         background-color: #3b535866;
-        padding-top: 61px;
-        padding-bottom: 61px;
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 12px;
+        padding-right: 12px;
         position: fixed;
-        top: -20px;
-        right: -20px;
+        top: 0px;
+        right: 1px;
         color: white;
         font-size: 30px;
         margin: 20px;
         align-self: flex-end;
-
     }
 
     ul.show {
@@ -362,11 +362,12 @@ a {
     #nav-list {
         display: none;
         position: fixed;
-        top: -30px;
-        font-size: 1.5rem;
+        top: -40px;
+        font-size: 2.5rem;
         padding-left: 25px;
         padding-top: 10px;
         padding-bottom: 10px;
+        height: 245px;
     }
 
     nav{
@@ -382,6 +383,63 @@ a {
     #nav-list-bottom{
         display: none;
     }
+
+    .socials{
+        position: fixed;
+        right: 1px;
+        top: 75px;
+        background-color: #3b535866;
+        padding-top: 10px;
+        padding-bottom: 0px;
+        z-index: 1;
+        padding-right: 5px;
+        padding-left: 5px;
+
+    }
+
+    .social-icon{
+        height: 40px;
+        width: 40px;
+    }
+
+    #socials-non-index{
+        display: block;
+    }
+
+    .testimonial-hero{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .testimonial-container{
+        width: 300px;
+        height: 450px;
+        background-color: #182224;
+        margin-top: 40px;
+        border-radius: 2px;
+        position: relative;
+        top: 100px;
+        left: -4px;
+        border: 2px solid black;
+        box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.409);
+    }
+
+    .testimonial-picture{
+        width: 150px;
+        border-radius: 150px;
+        position: relative;
+        left: -5%;
+        top: -20px;
+        box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.409);
+    }
+
+    .testimonial-text{
+        color: white;
+        font-size: 14px;
+        padding: 50px;
+        position: relative;
+        top: -50px;
+    }
 }
 
 
@@ -390,7 +448,7 @@ a {
 
 
 
-/* ------About Me Style----- */
+/* ------About Me Page Style----- */
 
 .about-me-nav{
     position: relative;
